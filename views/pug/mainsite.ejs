@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/public/style2.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Site</title>
+</head>
+<body>
+       
+    <div class="cube spin">
+        <figure class="side top" id="ok">
+            <form action="/registerr" method="post">
+                <button class="reg">Register</button>    
+            </form>
+            
+        </figure>
+        <figure class="side left"> 
+        </figure>
+        <figure class="side right">
+            <form action="/loginn" method="post">
+                <button class="reg" type="submit" >Login</button>    
+            </form>
+        </figure>
+    </div>
+      
+    <button class="sidebar-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <img src="logo.svg" class="logo" alt="" />
+          <button class="close-btn"><i class="fas fa-times"></i></button>
+        </div>
+        <!-- links -->
+        <ul class="links">
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <li>
+            <a href="about.html">about</a>
+          </li>
+          <li>
+            <a href="projects.html">projects</a>
+          </li>
+          <li>
+            <a href="contact.html">contact</a>
+          </li>
+        </ul>
+        <!-- social media -->
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-behance"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-sketch"></i>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- javascript -->
+      <script>
+       const toggleBtn = document.querySelector(".sidebar-toggle");
+       const closeBtn = document.querySelector(".close-btn");
+       const sidebar = document.querySelector(".sidebar");
+
+        toggleBtn.addEventListener("click", function () {
+       
+        sidebar.classList.toggle("show-sidebar");
+        
+        });
+
+        closeBtn.addEventListener("click", function () {
+        sidebar.classList.remove("show-sidebar");
+        });
+
+    </script>
+        
+    
+</body>
+</html>
