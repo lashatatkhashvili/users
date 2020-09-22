@@ -32,7 +32,7 @@ app.set('views', './views/pug')
 
 
 app.use(session({
-  secret: process.env.SESSION_SECRET,
+  secret: "string",
   resave: true,
   saveUninitialized: true,
 }));
